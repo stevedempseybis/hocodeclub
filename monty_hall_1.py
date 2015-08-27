@@ -12,7 +12,7 @@ switch = int(sys.argv[1]) if len(sys.argv) >= 2 else 1
 trials = int(sys.argv[2]) if len(sys.argv) >= 3 else 1000000
 
 
-for i in range(trials):
+for _ in range(trials):
 	
 	# randomly pick a door
 	picked = 1 #random.randint(1,3)
