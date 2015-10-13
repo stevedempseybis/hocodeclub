@@ -14,12 +14,13 @@ trials = int(sys.argv[2]) if len(sys.argv) >= 3 else 1000000
 
 for _ in range(trials):
 	
-	# randomly pick a door
-	picked = 1 #random.randint(1,3)
 	# randomly set the prize
 	prize = random.randint(1,3)
-	
-	#open a random door
+
+	# randomly pick a door (or rather, set the random door to be door 1)
+	picked = 1 #random.randint(1,3)
+
+	# open a random door
 	# BUT, can't open the selected door, OR the prize door
 	opened = random.randint(2,3)
 	while opened == prize:
