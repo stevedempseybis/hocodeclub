@@ -41,7 +41,7 @@ for _ in range(trials):
 		# lose
 		losses += 1
 
-print (trials, "trials\n")
-print ("with switch =", switch, "\n")
-print ("wins:", wins)
-print ("losses:", losses)
+print trials, "trials\n"
+print "with switch =", switch, "\n"
+print "wins:", wins
+print "losses:", losses
